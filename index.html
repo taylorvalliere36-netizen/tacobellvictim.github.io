@@ -270,6 +270,201 @@
 
 </footer>
 
-</body>
+<<body>
+
+<!-- ============================= -->
+
+<!-- SITE-66 ENTRY SCREEN -->
+
+<!-- ============================= -->
+
+<div id="entry-screen">
+
+<video id="entry-video" autoplay muted playsinline>
+    <source src="assets/0819.mp4" type="video/mp4">
+</video>
+
+<div class="scanlines"></div>
+
+<div class="entry-overlay"></div>
+
+<div class="entry-content">
+
+    <div class="system-text">
+        FOUNDATION SECURE NETWORK
+    </div>
+
+    <h1>SITE-66</h1>
+
+    <h2>PERSONNEL DATABASE</h2>
+
+    <div class="loading">
+        CONNECTION: <span>ESTABLISHED</span>
+    </div>
+
+    <div class="loading">
+        SECURITY SYSTEM: <span>ONLINE</span>
+    </div>
+
+    <div class="warning">
+        ⚠ AUTHORIZED PERSONNEL ONLY ⚠
+    </div>
+
+    <button onclick="enterSite()">
+        ENTER DATABASE
+    </button>
+
+</div>
+
+</div>
+
+<!-- BACKGROUND MUSIC -->
+
+<audio id="background-music" loop> <source src="assets/2026-08-19 17-31-16[rebalanced].mp3" type="audio/mpeg"> </audio>
+
+<!-- ============================= -->
+
+<!-- MAIN SITE -->
+
+<!-- ============================= -->
+
+<header>
+
+<h1>SITE-66 FOUNDATION DATABASE</h1>
+
+<p>GENERAL SECURITY DEPARTMENT</p>
+
+</header>
+
+<nav>
+
+<a href="index.html">HOME</a>
+
+<a href="personnel.html">PERSONNEL</a>
+
+<a href="records.html">RECORDS</a>
+
+<a href="archives.html">ARCHIVES</a>
+
+</nav>
+
+<section class="hero">
+
+<h2>CONNOR REDMEN</h2>
+
+<h3>CODENAME: MERCER</h3>
+
+<p>
+    Foundation personnel assigned to the General Security Department.
+    Current status: ACTIVE.
+</p>
+
+</section>
+
+<section class="container">
+
+<h2 class="section-title">
+    PERSONNEL OVERVIEW
+</h2>
+
+<div class="cards">
+
+    <div class="card">
+
+        <h3>Rank</h3>
+
+        <p>
+            Sergeant
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>Department</h3>
+
+        <p>
+            General Security
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>Status</h3>
+
+        <p>
+            ACTIVE
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>Clearance</h3>
+
+        <p>
+            Level 1
+        </p>
+
+    </div>
+
+</div>
+
+</section>
+
+<section class="container">
+
+<h2 class="section-title">
+    DATABASE
+</h2>
+
+<div class="cards">
+
+    <div class="card">
+
+        <h3>Personnel File</h3>
+
+        <p>
+            View Connor Redmen's official Foundation personnel information.
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>Incident Reports</h3>
+
+        <p>
+            Classified records of incidents involving Sergeant Redmen.
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>Journal</h3>
+
+        <p>
+            Personal journal entries recovered from Redmen's quarters.
+        </p>
+
+    </div>
+
+</div>
+
+</section>
+
+<footer>
+
+SITE-66 FOUNDATION DATABASE<br>
+
+UNAUTHORIZED ACCESS IS PROHIBITED
+
+</footer>
+
+<script> function enterSite() { const screen = document.getElementById("entry-screen"); const music = document.getElementById("background-music"); const video = document.getElementById("entry-video"); // Start music after user interaction music.volume = 0.35; music.play(); // Replay the glitch video video.currentTime = 0; video.play(); // Fade the entry screen away screen.style.transition = "opacity 1.2s ease"; screen.style.opacity = "0"; // Remove it completely setTimeout(function() { screen.style.display = "none"; }, 1200); } </script>
+
+</body>>
 
 </html>
